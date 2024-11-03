@@ -1,0 +1,234 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-image: url("./images/background.png");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    display: flex;
+    justify-content: center;                           
+}
+.logo {
+    cursor: pointer;
+    margin: 100px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.logo:hover{
+    text-shadow: #ffffff;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+.content p {
+    font-size: 1rem;
+
+}
+.content h1 {
+    font-size: 2.5rem;
+}
+.content button {
+padding: 7px;
+border: 2px solid black;
+outline: none;
+color: #fff;
+background: transparent;
+cursor: pointer;
+margin: 10px;
+}
+.time {
+    display: flex;
+}
+.time div {
+    flex-basis: 100px;
+}
+.time div p {
+    font-size: 2.7rem;
+}
+.rocket {
+        width: 150px;
+        height: 250px;   
+        position: absolute;
+        right: 10%; 
+        bottom: 0;
+        animation: rocket 4s linear infinite;  
+        opacity: 0.9;                             
+}
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+.rocket1 {
+    width: 150px;
+    height: 250px;   
+    position: absolute;
+    right: 20%; 
+    bottom: 0;
+    animation: rocket 4s linear infinite;        
+    opacity: 0.9;                       
+}
+
+@keyframes rocket1 {
+0% {
+    bottom: 0;
+    opacity: 0;
+}
+100% {
+    bottom: 105%;
+    opacity: 1;
+}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* background-image: url("./images/c5a4c858-c67b-495f-9de0-05edbc8b14d3.jpg"); */
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.logo {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: rgb(239, 246, 255);
+    text-shadow: 0 0 10px #ffffff;
+    
+}
+/* .logo:hover {
+    text-shadow: 0 0 10px #ffffff;
+} */
+.content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content p {
+    font-size: 1rem;
+    color: rgb(246, 235, 194);
+}
+.content h1 {
+    font-size: 2rem;
+}
+.content button {
+    padding: 7px 20px;
+    border: 2px solid black;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.time div {
+    flex-basis: 70px;
+}
+.time div p {
+    font-size: 2rem;
+    color: rgb(113, 23, 23);
+}
+.time div span {
+    font-size: 0.8rem;
+}
+.rocket, .rocket1, .rocket2 {
+    width: 150px;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+    opacity: 0.9;
+}
+.rocket {
+    right: 10%;
+}
+.rocket1 {
+    right: 49%;
+}
+.rocket2 {
+    right: 55%;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo {
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    r
+    .time div p {
+        font-size: 1.5rem;
+    }
+    .time div span {
+        font-size: 0.7rem;
+    }
+    .rocket, .rocket1, .rocket2 {
+        width: 100px;
+        height: 150px;
+        bottom: -10px;
+    }
+    .time {
+        gap: 5px;
+    }
+    .rocket {
+    right: 20%;
+    }
+    .rocket1 {
+        right: 37%;
+    }
+    .rocket2 {
+        right: 58%;
+    }
+}
