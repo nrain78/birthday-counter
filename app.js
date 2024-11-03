@@ -18,6 +18,6 @@ let x = setInterval(function (){
     document.getElementById("minutes").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
         // document.getElementById("time").style.display = "none"
-        document.getElementById("msg").innerHTML = '<h3>"Today is your day!<br>HAPPY BIRTHDAY Jan&#9825"</h3>';
+        document.getElementById("msg").innerHTML = '<h3>"Today is your day!<br>HAPPY BIRTHDAY Jan&#9825<br>My whole world&#127758;My everything&#9825</h3>';
     }
 },1000)
